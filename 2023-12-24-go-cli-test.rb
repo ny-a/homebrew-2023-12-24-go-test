@@ -5,20 +5,20 @@
 class 20231224GoCliTest < Formula
   desc ""
   homepage ""
-  version "0.0.2"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ny-a/2023-12-24-go-cli-test/releases/download/v0.0.2/2023-12-24-go-cli-test_Darwin_arm64.tar.gz"
-      sha256 "306cf575a09221bb54be50fd528a48e4eb2c25f49f269aedee0c7d5b2bb904c8"
+      url "https://github.com/ny-a/2023-12-24-go-cli-test/releases/download/v0.0.4/2023-12-24-go-cli-test_Darwin_arm64.tar.gz"
+      sha256 "9b675b01265dda7831f0b6f93b86255bc04d27c52ddc0744b3a0f67f98dfe1f7"
 
       def install
         bin.install "2023-12-24-go-cli-test"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ny-a/2023-12-24-go-cli-test/releases/download/v0.0.2/2023-12-24-go-cli-test_Darwin_x86_64.tar.gz"
-      sha256 "81fe363ab93b1bf5c0f28be911a88e95d63948e5ef1b7c560fa344113155127e"
+      url "https://github.com/ny-a/2023-12-24-go-cli-test/releases/download/v0.0.4/2023-12-24-go-cli-test_Darwin_x86_64.tar.gz"
+      sha256 "c7e7aa2833c5260537626cb4366e9429691efe978b2ff644537987ee8abb3438"
 
       def install
         bin.install "2023-12-24-go-cli-test"
@@ -28,16 +28,16 @@ class 20231224GoCliTest < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ny-a/2023-12-24-go-cli-test/releases/download/v0.0.2/2023-12-24-go-cli-test_Linux_x86_64.tar.gz"
-      sha256 "8317feb975bf65c3e595a768d825db96b82518f70110c0beddaa8864b79f05a9"
+      url "https://github.com/ny-a/2023-12-24-go-cli-test/releases/download/v0.0.4/2023-12-24-go-cli-test_Linux_x86_64.tar.gz"
+      sha256 "ee780948385b6d1be7c2a64caa4a7dee426d75b5e84451ceb270cbb3a2aa084d"
 
       def install
         bin.install "2023-12-24-go-cli-test"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ny-a/2023-12-24-go-cli-test/releases/download/v0.0.2/2023-12-24-go-cli-test_Linux_arm64.tar.gz"
-      sha256 "5d6c2ece6d14983670947173bdd4c41264a786efe01a20e93c5dca4175ffd575"
+      url "https://github.com/ny-a/2023-12-24-go-cli-test/releases/download/v0.0.4/2023-12-24-go-cli-test_Linux_arm64.tar.gz"
+      sha256 "a073af2fb836c9d36843e40a03a89c73aeeefd139950f9e7e2c8e3e67aac34dc"
 
       def install
         bin.install "2023-12-24-go-cli-test"
